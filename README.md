@@ -1,4 +1,4 @@
-# flutter_date_difference
+# flutter_islamic_icons
 
 Published Package on pub.dev
 

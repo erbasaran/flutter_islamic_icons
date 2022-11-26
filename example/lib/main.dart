@@ -13,11 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Islamic Icons',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        appBarTheme: const AppBarTheme(
-          centerTitle: true
-        )
-      ),
+          primarySwatch: Colors.blue,
+          appBarTheme: const AppBarTheme(centerTitle: true)),
       home: const MyHomePage(),
     );
   }
@@ -59,7 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (context) => const AllIconsPage()),
                   );
                 },
-                child: const Text("All Icons", style: TextStyle(color: Colors.white)))
+                child: const Text("All Icons",
+                    style: TextStyle(color: Colors.white)))
           ],
         ),
       ),
@@ -168,11 +166,9 @@ class _AllIconsPageState extends State<AllIconsPage> {
         title: const Text("Flutter Islamic Icons"),
       ),
       body: GridView.builder(
-        padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10),
+              crossAxisCount: 3, crossAxisSpacing: 10, mainAxisSpacing: 10),
           itemCount: _iconList.length,
           itemBuilder: (BuildContext ctx, index) {
             return Card(
